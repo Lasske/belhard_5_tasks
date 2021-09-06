@@ -21,7 +21,6 @@ def lets_else(range_val: int) -> int:
             break
     else:
         counter = -5
-        pass
     return counter
 
 
