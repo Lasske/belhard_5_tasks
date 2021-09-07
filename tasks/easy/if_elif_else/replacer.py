@@ -33,9 +33,9 @@ def replacer(check_str: str, search_str: str, replace_str: str) -> str:
     :rtype: str
     """
     if search_str in check_str:
-        return check_str.replace(search_str, replace_str)
+        return (check_str.replace(search_str, replace_str)).capitalize()
     else:
-        print("Ошибка!")
+        return "Ошибка!"
 
 
 if __name__ == '__main__':

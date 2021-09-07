@@ -36,7 +36,6 @@ def lets_break(n: int) -> int:
             counter += 1
         else:
             break
-    pass
     return counter
 
 

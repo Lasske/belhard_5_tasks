@@ -25,7 +25,7 @@ def hide_card_numbers(card_number: str) -> str:
     if len(card_number) == 16 and card_number.isdigit():
         return card_number[0:4] + ("*" * 8) + card_number[-4:16]
     else:
-        return False
+        return "Ошибка"
 
 
 if __name__ == '__main__':
