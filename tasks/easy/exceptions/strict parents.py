@@ -28,7 +28,7 @@ import random
 def get_score():
     result = random.randint(-5, 10)
     if result <= 0:
-        raise RuntimeError('Собака съела дневник')
+        raise RuntimeError('Собака съела дневник:')
     return result
 
 
@@ -54,5 +54,18 @@ def random_gift():
 
 if __name__ == '__main__':
     print("Просим показать ребенка дневник\n")
-    gift = None
-    # TODO написать свой код здесь
+    gift = random_gift()
+    try:
+        score = get_score()
+        print(f"Ребёнок принес со школы {score}:")
+        if score < 7:
+            raise ValueError(score)
+    except RuntimeError as exc:
+        print(exc)
+        punish_dog()
+    except ValueError as exc:
+        punish_child(exc)
+    else:
+        praise(gift)
+    finally:
+        cook_dinner()
