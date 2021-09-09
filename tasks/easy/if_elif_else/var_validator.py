@@ -50,7 +50,6 @@ def is_valid(check_string: str) -> bool:
         return True
     else:
         return False
-    return result
 
 
 if __name__ == '__main__':

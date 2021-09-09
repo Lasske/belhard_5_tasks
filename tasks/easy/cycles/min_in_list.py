@@ -10,7 +10,6 @@
 min_in_list([1, 2, 3, -2, 3, 5]) -> -2
 min_in_list([7, 2, 4, 6, 1, 4]) -> 1
 """
-import math
 
 
 def min_in_list(some_list: list) -> int:

@@ -44,7 +44,6 @@ def is_year_leap(year: int) -> bool:
             return False
     else:
         return True
-    return result
 
 
 if __name__ == '__main__':

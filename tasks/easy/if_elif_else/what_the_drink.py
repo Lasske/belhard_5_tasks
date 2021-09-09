@@ -24,13 +24,12 @@ what_you_drink(30) == "можно виски"
 def what_you_drink(age: int) -> str:
     if age < 14:
         return "можно сок"
-    if 14 < age < 18:
+    elif 14 < age < 18:
         return "можно кока-колу"
-    if 18 <= age < 21:
+    elif 18 <= age < 21:
         return "можно пиво"
-    if age > 21:
+    elif age > 21:
         return "можно виски"
-        return result
 
 
 if __name__ == '__main__':

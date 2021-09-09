@@ -15,6 +15,13 @@ VALUE_LIST = ['a', 'b', 'c', 'd', 'e', 'f']
 
 def list_compose(indexes: list, values: list) -> list:
     result_list = []
+    for i in range(len(indexes)):
+        mean = indexes[i]
+        length = len(values) - 1
+        if abs(mean) > length:
+            result_list.append(None)
+        else:
+            result_list.append(values[mean])
     return result_list
 
 
